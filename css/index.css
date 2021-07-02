@@ -1,0 +1,68 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(#000000, #1c1c1c);
+  border-bottom: 10px solid #a40d39;
+  padding: 10px 20px;
+}
+
+nav {
+  text-align: right;
+}
+
+a {
+  display: inline-flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+a:hover {
+  color: #fd8b37;
+}
+
+a::before {
+  content: "";
+  background-color: #fd8b37;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+#button {
+  display: inline-block; 
+  background-color: #a40d39;
+  box-shadow: 5px 5px 0px #fd8b37;
+  padding: 18px 20px;
+  margin-right: 0px;
+}
+
+
+
+/* 
+ANOTAÇÕES:
+display
+inline: 
++ mesma linha, 
+- não dá pra definir width e height, 
+* ganha comportamento de uma palavra 
+* o que define o tamanho é o conteúdo da tag
+
+block: (Quando ocupa toda a linha)
+- não fica na mesma linha,
++ consigo definir width e height,
+* não tem comportamento de palavras
+* o que define a largura (width) é sempre o pai, exemplo, no caso do nav o pai é o header,
+* o que define a altura (height) são os elementos filhos, ou seja, o conteúdo.
+
+inline-block:
++ fica na mesma linha,
++ permite definir altura e largura,
+* utiliza o comportamento de palavras,
+* o que define o tamanho dele é o conteúdo,
+
+*/
