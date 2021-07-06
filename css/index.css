@@ -2,15 +2,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #114B5F;
-  border-bottom: 10px solid #E4FDE1;
+  background: #2176AE;
+  border-bottom: 10px solid #57B8FF;
   padding: 10px 20px;
-}
-
-h1 {
-  font-family: "Bree Serif";
-  color: #FFFFFF;
-  text-shadow: 2px 2px 0px #028090;
 }
 
 nav {
@@ -29,12 +23,12 @@ a {
 }
 
 a:hover {
-  color: #E4FDE1;
+  color: #FBB13C;
 }
 
 a::before {
   content: "";
-  background-color: #F45B69;
+  background-color: #FBB13C;
   width: 10px;
   height: 10px;
   margin-right: 10px;
@@ -42,16 +36,15 @@ a::before {
 
 #button {
   display: inline-block; 
-  background-color: #456990;
-  box-shadow: 5px 5px 0px #E4FDE1;
+  background-color: #FE6847;
+  box-shadow: 5px 5px 0px #B66D0D;
   padding: 18px 20px;
   margin-right: 0px;
-  transition: transform 150ms linear;
+  transition: transform 150ms cubic-bezier(.45,.95,.65,2.50);
 }
 
 #button:hover {
   transform: scale(1.075);
-  opacity: 0.8;
 }
 
 
